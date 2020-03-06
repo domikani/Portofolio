@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-project',
@@ -6,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./project.component.scss']
 })
 export class ProjectComponent implements OnInit {
+  public projectNumber = '';
 
-  constructor() { }
+
+
+  constructor(
+    private route: ActivatedRoute
+  ) {
+  }
 
   ngOnInit() {
+    this.route.params.subscribe(params => {
+      this.projectNumber = params.projectNumber;
+    });
+
   }
 
 }

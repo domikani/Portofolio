@@ -1,0 +1,30 @@
+.lineOne, .lineTwo {
+  border-bottom: 1px solid black;
+}
+
+
+.title {
+  font-family: 'Josefin Slab', sans-serif;
+  font-size: 64px;
+  position: relative;
+  bottom: -50px;
+}
+
+.button a {
+  border: 1px solid black;
+  padding: 32px 96px 32px;
+  background-color: white;
+  text-decoration: none;
+  font-size: 48px;
+  color: black;
+  font-family: 'Josefin Slab', serif;
+  font-weight: 100;
+}
+
+
+.button a:hover {
+  background-color: black;
+  color: white;
+
+}
+

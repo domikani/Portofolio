@@ -1,0 +1,35 @@
+.lineOne, .lineTwo {
+  border-bottom: 1px solid black;
+}
+
+
+.title {
+  font-family: 'Josefin Slab', sans-serif;
+  font-size: 64px;
+  position: relative;
+  bottom: -50px;
+}
+
+.span-project {
+  color: black;
+  background-color: rgba(252, 252, 252, 0.6);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  font-family: 'Josefin Slab', sans-serif;
+
+
+}
+
+.project:hover .span-project {
+  opacity: 1;
+  transition: 0.4s ease-in-out;
+
+}
+

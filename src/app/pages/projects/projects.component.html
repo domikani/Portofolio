@@ -1,1 +1,28 @@
-<p>projects works!</p>
+<div class="row justify-content-around animated slideInDown mt-5">
+  <div class="col-4 lineOne">
+
+  </div>
+
+  <span class="title">PROJECTS</span>
+
+  <div class="col-4 lineTwo">
+
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-3 text-center project" style="margin-top: 150px" *ngFor="let pr of project  let i=index;">
+      <a [routerLink]="'/projects/'+ pr ">
+        <img class="img-fluid" src="../../../assets/images/project.jpg" alt="project">
+        <div class="span-project">
+          {{ pr }}
+          <br>Category
+        </div>
+
+      </a>
+
+    </div>
+  </div>
+</div>
+
