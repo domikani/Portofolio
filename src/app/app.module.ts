@@ -1,6 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-
+import {AngularFontAwesomeModule} from 'angular-font-awesome';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
@@ -15,6 +15,7 @@ import {FooterComponent} from './components/footer/footer.component';
     FooterComponent
   ],
   imports: [
+    AngularFontAwesomeModule,
     BrowserModule,
     AppRoutingModule,
     NgbModule.forRoot()
