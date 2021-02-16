@@ -64,6 +64,14 @@ export class ProjectsComponent implements OnInit {
       date: 2015,
       description: 'Diploma Thesis, Advanced Spatial Analysis, Suitability Analysis, Cartography, ArcMap',
       url: 'https://domikani.github.io/PortfolioGIS/projects/suitability.html'
+    },
+    {
+      id: 'Project 8',
+      title: 'Sweden Health Facilities, OSM',
+      category: 'Web-GIS',
+      date: 2020,
+      description: 'Web-GIS, Leaflet.js, AngularJS',
+      url: 'https://sweden-health-facilities.vercel.app/'
     }
 
   ];
