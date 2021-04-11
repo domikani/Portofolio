@@ -72,7 +72,23 @@ export class ProjectsComponent implements OnInit {
       date: 2020,
       description: 'Web-GIS, Leaflet.js, AngularJS',
       url: 'https://sweden-health-facilities.vercel.app/'
-    }
+    },
+    {
+      id: 'Project 9',
+      title: 'My portfolio',
+      category: 'Web development',
+      date: 2021,
+      description: 'Personal Portfolio, AngularJS, JavaScript, TypeScript, HTML5, CSS, Bootstrap ',
+      url: 'https://domnas-portfolio.vercel.app/'
+    },
+    {
+      id: 'Project 10',
+      title: 'Fight violence against women and girls',
+      category: 'ArcGIS StoryMaps',
+      date: 2021,
+      description: 'Esri, ArcGIS Online, ArcGIS StoryMaps, Open Data, Social Geography',
+      url: 'https://storymaps.arcgis.com/stories/7d4629581db94ddb9d0e9a83f19df1f4'
+    },
 
   ];
 
