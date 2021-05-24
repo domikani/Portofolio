@@ -5,7 +5,4 @@ export interface IProject {
   content: string;
   date: number;
   description: string;
-  url: string;
-  images: string;
-
 }
