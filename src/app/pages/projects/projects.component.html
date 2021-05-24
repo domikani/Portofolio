@@ -13,12 +13,11 @@
 <div class="container">
   <div class="row">
     <div class="card-deck">
-      <div class="col-4 card-deck text-center" style="margin-top: 100px" *ngFor="let pr of project  let i=index;">
+      <div class="col-md-4 card-deck text-center" style="margin-top: 100px" *ngFor="let pr of projects">
         <div class="card">
           <div class="card-image">
             <img class="card-img-top " src="../../../assets/images/project.jpg" alt="project">
             <div class="image-overlay">
-              {{ pr.id }}
               <br>Date: {{pr.date}}
               <br>Category: {{pr.category}}
             </div>
@@ -28,7 +27,7 @@
             <p class="card-text">{{pr.description}}</p>
           </div>
           <div class="card-footer">
-            <a href="{{pr.url}}" target="_blank" class="btn btn-outline-dark">Explore</a>
+            <a [routerLink]="'/project/' + pr.id" target="_blank" class="btn btn-outline-dark">Explore</a>
           </div>
         </div>
 

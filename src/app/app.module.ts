@@ -9,11 +9,13 @@ import {FooterComponent} from './components/footer/footer.component';
 import {TagCloudModule} from 'angular-tag-cloud-module';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+
   ],
   imports: [
     AngularFontAwesomeModule,
@@ -23,7 +25,10 @@ import {TagCloudModule} from 'angular-tag-cloud-module';
     NgbModule.forRoot()
   ],
   providers: [],
+  exports: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
 }
+
+

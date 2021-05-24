@@ -1,0 +1,31 @@
+<div class="container">
+  <h1 class="title">{{project[projectId].title}}</h1>
+  <div class="row" *ngIf="project[projectId].content === 'video'">
+    <a [href]="project[projectId].url" target="_blank" class="btn btn-outline-dark">Visit the project</a>
+    <div class="col-12">
+      <iframe class="video" [src]="urlSafe" width="700" height="240" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="row" *ngIf="project[projectId].content === 'image' && project[projectId].images.length=== 1 ">
+    <div class="col-lg-12" *ngFor="let image of project[projectId].images">
+      <div class="thumbnail">
+        <a href="{{image}}" target="_blank">
+          <img src="{{image}}" alt="Lights" style="width:100%">
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <div class="row" *ngIf="project[projectId].content === 'image' && project[projectId].images.length> 1 ">
+    <div class="col-lg-6" *ngFor="let image of project[projectId].images">
+      <div class="thumbnail">
+        <a href="{{image}}" target="_blank">
+          <img src="{{image}}" alt="Lights" style="width:100%">
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
